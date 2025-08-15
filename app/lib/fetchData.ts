@@ -4,7 +4,6 @@ const API_KEY = process.env.NEXT_PUBLIC_GROQ_API_KEY!;
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 export async function fetchData(messages: SingleMessage[]) {
-  console.log(messages);
   try {
     const response = await fetch(API_URL, {
       method: "POST",
